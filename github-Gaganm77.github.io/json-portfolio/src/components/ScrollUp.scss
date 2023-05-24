@@ -1,0 +1,18 @@
+@import "../styles/Scheme.scss";
+
+.scrollUp {
+  position: fixed;
+  z-index: 15;
+  right: 2rem;
+  bottom: 2rem;
+
+  border-color: $text-secondary;
+  border-radius: 0.25rem;
+  background-color: $text-secondary;
+
+  i {
+    font-size: 1.25rem;
+
+    color: $text-light;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../styles/Scheme.scss";
+
+.about {
+  .profile-intro {
+    .profile-picture {
+      margin: auto;
+
+      img {
+        display: block;
+
+        max-width: 100%;
+        height: auto;
+        max-height: 250px;
+        margin: auto;
+      }
+    }
+
+    .website-intro {
+      margin: auto;
+
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contact {
+    img {
+      max-height: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .about {
+    .profile-intro {
+      .website-intro {
+        text-align: center;
+
+        h4 {
+          margin-top: 1rem;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

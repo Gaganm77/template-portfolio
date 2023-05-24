@@ -1,0 +1,32 @@
+@import "./styles/Scheme.scss";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./styles/Page.scss";
+@import "./styles/SkillItem.scss";
+@import "./styles/ProjectItem.scss";
+@import "./styles/TimelineHorizontal.scss";
+@import "./styles/TimelineVertical.scss";
+@import "./styles/Typography.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  color: $text-dark;
+  background: $background-dark;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page {
+  margin-top: 52px;
+}
+
+@media only screen and(max-width: 991px) {
+  .container,
+  .container-fluid {
+    max-width: 100% !important;
+  }
+}

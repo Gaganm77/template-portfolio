@@ -1,0 +1,124 @@
+@import "./Scheme.scss";
+
+.content {
+  margin-top: $section-padding;
+
+  .section-padding {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
+
+  .light-section {
+    background-color: $background-light;
+  }
+
+  .dark-section {
+    background-color: $background-dark;
+  }
+
+  .media-gutter {
+    padding: 0 $media-gutter;
+  }
+
+  .content-gutter {
+    margin-bottom: $content-padding;
+    padding: 0 $content-gutter;
+  }
+
+  .spacer {
+    padding-bottom: $content-padding;
+  }
+
+  section,
+  .blue-section {
+    .btn {
+      font-size: 15px;
+      font-weight: 700;
+
+      display: table;
+
+      margin: 0 auto;
+      padding: 0.5rem 1.5rem;
+
+      color: #FFF !important;
+
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+      }
+    }
+
+    .badge {
+      margin-right: 0.75rem;
+      margin-bottom: 0.25rem;
+
+      background-color: $text-secondary;
+    }
+  }
+
+  section {
+    a {
+      font-weight: 600 !important;
+
+      display: inline-flex;
+
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .btn {
+      background-color: $primary;
+
+      &:hover,
+      &:focus {
+        background: $primary-dark;
+      }
+    }
+  }
+
+  .blue-section {
+    color: $text-light;
+    background-color: $primary;
+
+    a {
+      color: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .btn {
+      background-color: rgba(0, 0, 0, 0.2);
+
+      &:hover,
+      &:focus {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  .content {
+    .content-gutter {
+      padding: 0;
+    }
+
+    .media-gutter {
+      padding: 0 $content-gutter !important;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .content {
+    .media-gutter {
+      padding: 0 !important;
+    }
+  }
+}

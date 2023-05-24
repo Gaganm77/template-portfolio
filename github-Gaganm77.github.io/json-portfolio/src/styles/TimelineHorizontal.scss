@@ -1,0 +1,55 @@
+@import "./Scheme.scss";
+
+.timeline-horizontal {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+  border-top: 2px solid $line;
+
+  .timeline-item {
+    margin-top: -0.75rem;
+
+    .date-short,
+    .date-full {
+      font-weight: 700;
+
+      padding: 0.25rem 0.5rem;
+
+      color: $background-light;
+      border-radius: 5px;
+      background-color: $primary;
+    }
+
+    .date-short {
+      display: none;
+    }
+
+    .details {
+      margin-top: 1rem;
+
+      .title {
+        font-weight: 700;
+
+        margin-bottom: 0;
+      }
+
+      .description {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .timeline-horizontal .timeline-item {
+    width: 25%;
+
+    .date-short {
+      display: inline;
+    }
+
+    .date-full {
+      display: none;
+    }
+  }
+}
